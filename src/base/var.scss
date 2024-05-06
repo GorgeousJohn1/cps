@@ -1,0 +1,29 @@
+//Шрифт
+$font: "TT Lakes", sans-serif;
+// Цвета фонов
+$bg-white: #FFF;
+$bg-gray: #F8F8F8;
+$bg-lightgray: #EAEAEA;
+//Цвета декора
+$el-aquamarin:#D9FFF5; //Верхние рамки
+$el-aquamarin-main: #41F6D7; //Хайлайт
+$el-aquamarin-light: #B8FFEC; //Рамка
+//Цвета текста
+$text-black: #1B1C21; //Черный кэп
+$text-gray: #7E7E82; //Серый
+//Цвет кнопок
+$pink: #FF3E79;
+//Буллеты свайпера
+$bullet: #DDDDDD;
+$bullet-active:#B5B6BC;
+
+//Размеры шрифтов
+$text-main: 28px; 
+$text-middle: 16px;
+$text-low: 14px;
+//Брейкпоинты
+$screen-xs: 320px;
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;

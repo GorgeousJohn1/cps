@@ -1,0 +1,53 @@
+.swiper-wrapper {
+  
+  @media screen and (min-width: 768) {
+    transform: none !important;
+  }
+}
+
+.swiper-slide {
+  flex: 1;
+  flex-grow: 0;
+}
+
+.swiper-pagination {
+  top: 88px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: $bullet;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $bullet-active;
+}
+/*.swiper-pagination-bullet{
+  top:80px;
+  width: 12px;
+  height: 12px;
+  background-color: #DDD;
+}
+.swiper-pagination-bullet-active {
+  background: #B5B6BC;
+}
+
+.swiper-paginationPrice, .swiper-paginationTech, .swiper-paginationBrands{
+  display: flex;
+  justify-content: center;
+  @media (min-width: $screen-sm){
+      display: none;
+  }
+}   
+
+.shown {
+  max-height: none !important;
+  overflow: visible !important;
+};
+
+.swiper-horizontal>.swiper-pagination-bullets {
+  display: flex;
+  align-items: flex-end;
+  bottom: 0;
+}*/

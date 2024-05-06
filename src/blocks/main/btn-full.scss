@@ -1,0 +1,12 @@
+.btn-full {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+
+  &__description {
+    font-size: 24px;
+    font-weight: 500;
+  }
+}

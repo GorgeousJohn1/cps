@@ -1,0 +1,28 @@
+.tech-link {
+  width: 240px;
+  height: 160px;
+  padding: 1rem;
+  border: 1px solid $bg-lightgray;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  &:hover {
+    box-shadow: 5px 5px 15px $text-gray;
+    
+    .arrow-btn {
+        svg {
+          transform: translate(30%, -50%);}
+      }
+  }
+
+  &__text {
+    font-weight: 500;
+    color: $text-black;
+  }
+
+    .arrow-btn{
+      align-self: flex-end;
+      
+    }
+}

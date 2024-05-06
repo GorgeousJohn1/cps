@@ -1,0 +1,51 @@
+.menu {
+  display: none;
+  background-color: $bg-white;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+
+  &__footer {
+    margin-top: auto;
+  }
+
+
+  @media screen and (min-width: $screen-xl) {
+    display: block;
+    max-width: 320px;
+    flex-grow: 1;
+    min-width: 320px;
+    opacity: 100%;
+  }
+}
+
+.menu-wrapper {
+  display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 320px;
+    position: fixed;
+    background-color: $bg-white;
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+    @media screen and (min-width: $screen-xl) {
+      box-shadow: none;
+    }
+}
+
+.languages {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.open {
+  display: block;
+  position: fixed;
+  opacity: 100%;
+  z-index: 100000;
+  width: 100%;
+  background-color: hsla(0, 0%, 100%, .9);
+}
+
+@import './modal-header/modal-header.scss';
+@import './modal-content/menu-navigate.scss';
+@import './modal-footer/modal-footer.scss';

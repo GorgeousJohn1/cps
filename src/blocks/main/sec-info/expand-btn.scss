@@ -1,0 +1,15 @@
+.expand-btn {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  position: relative;
+  left: -7px;
+
+  &:hover {
+    box-shadow: none;
+  }
+
+  span {
+    font-weight: 500;
+  }
+}

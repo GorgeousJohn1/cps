@@ -1,0 +1,33 @@
+.sec-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4vw;
+
+
+  @media screen and (min-width: $screen-sm) {
+    flex-direction: row;
+  }
+
+  &__text-wrapper {
+    flex: 1;
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+
+  &__text {
+    margin-bottom: 1rem;
+    font-size: $text-low;
+  }
+
+
+
+  &__image {
+    flex: 1;
+      img {width: 100%};
+  }
+}
+
+.hidden {
+  display: none;
+}

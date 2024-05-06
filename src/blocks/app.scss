@@ -1,0 +1,41 @@
+.app {
+max-width: 1440px;
+
+@media screen and (min-width: $screen-xl) {
+  display: flex;
+  margin: 0 auto;
+}
+
+  &__title {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    @media screen and (min-width: $screen-md) {
+      margin-bottom: 2rem;
+    }
+    @media screen and (min-width: $screen-xl) {
+      margin-top: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__navigation {
+    margin-bottom: 1.5rem;
+    @media screen and (min-width: $screen-md) {
+      margin-bottom: 2rem;
+    }
+    @media screen and (min-width: $screen-xl) {
+      margin-bottom: 1rem;
+      min-height: 82px;
+    }
+  }
+
+  &__info {
+    margin-bottom: 1.5rem;
+    @media screen and (min-width: $screen-md) {
+      margin-bottom: 2rem;
+    }
+    @media screen and (min-width: $screen-xl) {
+      margin-bottom: 3rem;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@mixin flex-sb-c($g) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:$g;
+};
+// @include flex-sb-c();
+
+@mixin flex-fs-c($g) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:$g;
+};
+// @include flex-fs-c();
+
+@mixin flex-fe-c($g) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap:$g;
+};
+// @include flex-fe-c();
+
+@mixin flex-fs-col($g) {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap:$g;
+};
+// @include flex-fs-col();
+
+@mixin hide {
+    display: none;
+};
+// @include hide;
+
+@mixin fade($h) {
+    position: absolute;
+    right: 0;
+    z-index: 200;
+    width: 24px;
+    height: $h;
+    background: linear-gradient(270.00deg, $bg-gray 16.836%, transparent 100%);
+};
+// @include fade();
+
+@mixin show-more($mh) {
+    max-height: $mh;
+    overflow: hidden;
+};
+// @include show-more();

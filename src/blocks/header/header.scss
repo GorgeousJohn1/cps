@@ -1,0 +1,52 @@
+.header {
+  height: 88px;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  background-color: $bg-white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid $el-aquamarin;
+  
+
+  @media screen  and (min-width: $screen-xl) {
+    display: none;
+  }
+
+  &__company {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3vw;
+      .divider {
+        display: none;
+
+        @media screen and (min-width: $screen-md) {
+          display: block;
+        }
+      }
+}
+
+  &__contact {
+    display: none;
+
+    @media screen and (min-width: $screen-md) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-left: auto;
+      margin-right: 20px;
+    }
+  }
+
+  &__request {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+}

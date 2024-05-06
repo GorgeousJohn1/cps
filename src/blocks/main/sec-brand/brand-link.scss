@@ -1,0 +1,19 @@
+.brand-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 224px;
+  height: 72px;
+  border: 1px solid $bg-lightgray;
+  border-radius: 6px;
+  background-color: $bg-white;
+  &:hover {
+    box-shadow: 5px 5px 15px $text-gray;
+    svg {
+      transform: translate(30%, -50%);
+    }
+  }
+
+}

@@ -1,0 +1,14 @@
+.main {
+  max-width: 1120px;
+  flex-grow: 1;
+}
+
+@import "./title/sec-title.scss";
+@import "./navigate/navigate.scss";
+@import "./sec-info/sec-info.scss";
+@import "./sec-info/expand-btn.scss";
+@import "./arrow-btn.scss";
+@import "./order-btn.scss";
+@import "./sec-brand/brand.scss";
+@import "./sec-tech/tech.scss";
+@import "./sec-price/price.scss";

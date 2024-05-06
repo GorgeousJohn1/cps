@@ -1,0 +1,211 @@
+.sec-price {
+  &__title {
+    color: $text-gray;
+    padding: 1rem 3vw;
+    background-color: $bg-white;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    border-top: 1px solid $el-aquamarin;
+    @media screen and (min-width: $screen-md) {
+      margin-bottom: 2rem;
+    }
+  }
+
+}
+
+.price-swiper {
+  padding-left: 3vw;
+  padding-bottom: 52px;
+  overflow: hidden;
+  width: 100%;
+
+  @media screen and (min-width: $screen-md) {
+    padding-bottom: 2rem;
+    padding-right: 1.5rem;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    padding-bottom: 3rem;
+    padding-right: 2rem;
+  }
+
+  &__list {
+    @media screen and (min-width: $screen-md) {
+      transform: none !important;
+      display: flex;
+      flex-direction: column;
+
+      background-color: $bg-white;
+      border-radius: 6px;
+    }
+  }
+
+  &__item {
+    @media screen and (min-width: $screen-md) {
+      width: 100% !important;
+      height: auto;
+    }
+  }
+
+  &__hint {
+    display: none;
+    color: $text-gray;
+    font-size: $text-low;
+    padding-bottom: 1rem;
+        
+    @media screen and (min-width: $screen-md) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    &--service {
+        flex-basis: 348px;
+        flex-grow: 1;
+    }
+    &--price {
+        flex-basis: 74px;
+        flex-grow: 1;
+    }
+    &--time {
+        flex-basis: 220px;
+        flex-grow: 1;
+    }
+  }
+}
+
+.price-card {
+  
+  &:hover {
+    @media screen and (max-width: $screen-md) {
+      box-shadow: 5px 5px 15px $text-gray;
+    }
+    
+  }
+  
+    @media screen and (min-width: $screen-md) {
+    width: 100%;
+    transform: none !important;
+  }
+
+  &__list {
+    width: 240px;
+    height: 200px;
+    background-color: $bg-white;
+    border: 1px solid $bg-lightgray;
+    border-radius: 6px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+
+    @media screen and (min-width: $screen-md) {
+      width: 100%;
+      height: auto;
+      padding-top: 23px;
+      padding-bottom: 23px;
+
+      flex-direction: row;
+      align-items: center;
+      border: none;
+      border-radius: 0;
+      border-bottom: 1px solid $bg-lightgray;
+    }
+  }
+
+  &__item {
+    font-size: $text-low;
+
+    &--first {
+      &::before {
+        content: "Ремонтные услуги";
+        color: $text-gray;
+        display: block;
+        @media screen and (min-width: $screen-md) {
+          display: none;
+        }
+      }
+
+      @media screen and (min-width: $screen-md) {
+        flex-basis: 348px;
+        flex-grow: 1;
+      }
+    }
+
+    &--second {
+      &::before {
+        content: "Цена";
+        color: $text-gray;
+        display: block;
+        @media screen and (min-width: $screen-md) {
+          display: none;
+        }
+      }
+
+      @media screen and (min-width: $screen-md) {
+        flex-basis: 74px;
+        flex-grow: 1;
+      }
+    }
+
+    &--last {
+      &::before {
+        content: "Срок";
+        color: $text-gray;
+        @media screen and (min-width: $screen-md) {
+          display: none;
+        }
+      }
+
+      div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      @media screen and (min-width: $screen-md) {
+        flex-basis: 220px;
+        flex-grow: 1;
+      }
+    }
+  }
+}
+
+.price-footer {
+    padding: 0 3vw;
+    border-bottom: 1px solid $el-aquamarin;
+
+    &__text {
+        margin-bottom: 1rem;
+        max-width: 421px;
+        font-size: $text-low;
+    }
+
+    &__btn {
+        padding-right: 35vw;
+        text-align: left;
+        margin-bottom: 3rem;
+        &:hover {
+          box-shadow: none;
+        }
+        
+        span {
+            font-weight: 500;
+            position: relative;
+        }
+        svg {
+            position: absolute;
+            top: 50%;
+            @media screen and (min-width: 497px) {
+                top: 0;
+            }
+        }
+    }
+}
+
+.shown {
+  max-height: none;
+}

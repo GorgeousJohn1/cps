@@ -1,0 +1,18 @@
+.menu-header {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    .btn--cross {
+      @media screen and (min-width: $screen-xl) {
+        display: none;
+      }
+    }
+  }
+}

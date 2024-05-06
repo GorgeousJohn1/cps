@@ -1,0 +1,36 @@
+.footer {
+  padding: 1rem 3vw;
+
+  @media screen and (min-width: $screen-md) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__text {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: $text-low;
+    color: $text-gray;
+
+    &:first-child {
+      @media screen and (min-width: $screen-md) {
+        text-align: left;
+        flex-basis: 218px;
+      }
+    }
+
+    &:nth-child(2) {
+      @media screen and (min-width: $screen-md) {
+        flex-basis: 214px;
+      }
+    }
+
+    &:last-child {
+      @media screen and (min-width: $screen-md) {
+        text-align: right;
+        flex-basis: 213px;
+      }
+    }
+  }
+}
