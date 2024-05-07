@@ -16,7 +16,7 @@
               <button class="btn btn--cross" type="button" id="cross">
                 <img src="images/icons-btn/cross.svg" alt="Закрыть." />
               </button>
-              <img src="images/icons-btn/logo.svg" alt="CPS logo." />
+              <a href="#" class="logo-link"><img src="images/icons-btn/logo.svg" alt="CPS logo." /></a>
             </div>
             <button class="btn" type="button">
               <img src="images/icons-btn/search.svg" alt="Поиск." />
@@ -89,12 +89,14 @@
             <img src="images/icons-btn/burger.svg" alt="Меню." />
           </button>
           <div class="divider"></div>
-          <img
-            src="images/icons-btn/logo.svg"
-            width="96"
-            height="51"
-            alt="CPS logo."
-          />
+          <a href="#" class="logo-link">
+            <img
+              src="images/icons-btn/logo.svg"
+              width="96"
+              height="51"
+              alt="CPS logo."
+            />
+          </a>
         </div>
         <div class="header__contact">
           <button class="btn" type="button" id="call2">
@@ -130,9 +132,9 @@
               </button>
             </div>
             <div class="btn-full">
-              <span class="btn-full__description">Оставить заявку</span>
+              <span class="btn-full__description">Статус ремонта</span>
               <button class="btn" type="button">
-                <img src="images/icons-btn/status.svg" alt="Статус ремонта" />
+                <img src="images/icons-btn/status.svg" alt="Статус ремонта." />
               </button>
             </div>
           </div>
@@ -141,13 +143,13 @@
         <nav class="navigation app__navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Ремонтируемые бренды</a>
+              <a href="#brandsa" class="navigation__link">Ремонтируемые бренды</a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Ремонтируемые устройства</a>
+              <a href="#devicesa" class="navigation__link">Ремонтируемые устройства</a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Цены на услуги</a>
+              <a href="#pricesa" class="navigation__link">Цены на услуги</a>
             </li>
             <li class="navigation__item">
               <a href="#" class="navigation__link">Дополнительные услуги</a>
@@ -162,7 +164,6 @@
               <a href="#" class="navigation__link">Отзывы</a>
             </li>
           </ul>
-          <div class="navigation__fade"></div>
         </nav>
         <!--Инфо-->
         <section class="sec-info app__info">
@@ -201,7 +202,7 @@
           </div>
         </section>
         <!--Ремонтируемые бренды-->
-        <section class="sec-brands">
+        <section class="sec-brands" id="brandsa">
           <h2 class="sec-brands__title">Ремонт техники различных брендов</h2>
           <div class="brand-swiper swiperBrands swiper" data-mobile="false">
             <ul class="brand-swiper__list swiper-wrapper">
@@ -453,7 +454,7 @@
           </div>
         </section>
         <!--Ремонтируемая техника-->
-        <section class="sec-tech">
+        <section class="sec-tech" id="devicesa">
           <h2 class="sec-tech__title">Ремонт различных видов техники</h2>
           <div class="tech-swiper swiper" data-mobile="false">
             <ul class="tech-swiper__list swiper-wrapper">
@@ -626,7 +627,7 @@
           </div>
         </section>
         <!--Цены-->
-        <section class="sec-price">
+        <section class="sec-price" id="pricesa">
           <h2 class="sec-price__title">Цены на услуги</h2>
           <div class="price-swiper swiper" data-mobile="false">
             <div class="price-swiper__hint">

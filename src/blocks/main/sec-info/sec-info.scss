@@ -20,7 +20,10 @@
     font-size: $text-low;
   }
 
-
+  &__text--hidden {
+    margin-bottom: 1rem;
+    font-size: $text-low;
+  }
 
   &__image {
     flex: 1;

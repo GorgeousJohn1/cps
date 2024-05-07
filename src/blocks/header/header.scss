@@ -50,3 +50,10 @@
     gap: 16px;
   }
 }
+
+.logo-link {
+  height: 100%;
+  &:hover {
+    filter: drop-shadow(5px -5px 5px rgba(201, 191, 191, 0.3));
+  }
+}
